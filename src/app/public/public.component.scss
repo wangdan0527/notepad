@@ -1,0 +1,87 @@
+.carousel-item,
+img {
+  width: 100%;
+}
+
+button
+{
+	background: transparent;
+    border: none;
+}
+
+.title-container
+{
+	border-bottom: 1px solid gray;
+}
+
+.title-container p
+{
+	color: gray;
+	font-size: 20px;
+}
+
+.title-container i
+{
+	color: gray;
+}
+
+.file-list
+{
+	border-right: 1px solid gray;
+	overflow-y: scroll;
+}
+
+.title-item
+{
+	
+}
+
+.title-item input
+{
+	width: 100%;
+	color: gray;
+	background: transparent;
+	border: none;
+}
+
+.title-item input:focus
+{
+	outline: none;
+}
+
+textarea
+{
+	width: 100%;
+	height: calc(100% - 40px);
+	border: none;
+	resize: none;
+}
+
+textarea:focus
+{    
+	outline: none;
+}
+
+.main-container > div
+{
+	height: 500px;
+}
+
+.btn-save
+{
+	background: transparent;
+	border: none;
+	color: blue;
+}
+
+.selected
+{
+	background: #eeeeee;
+}
+.btn-panel
+{
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	bottom: 0px;
+}

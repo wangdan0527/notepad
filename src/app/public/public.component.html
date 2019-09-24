@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="title-container">
+    <button class="float-left" (click)="onAdd()">
+      <i class="material-icons">add</i>
+    </button>
+    <p class="text-center mb-2">
+      My awesome Notepad
+    </p>
+  </div>
+  <div class="row main-container">
+    <div class="col-md-3 file-list pr-0">
+      <div *ngFor="let note of notes; let i = index">
+        <div class="title-item p-2 {{currentNote['objectId']==note['objectId']?'selected':''}}" (click)="onSelect(i)">
+          <input type="text" [(ngModel)]="note['title']">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9 pt-3">
+      <textarea *ngIf="currentNote!=undefined" [(ngModel)]="currentNote['content']">  
+      </textarea>
+
+      <div class="text-right btn-panel">
+        <button class="btn-save" (click)="onSave()">
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
